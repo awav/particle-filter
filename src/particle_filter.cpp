@@ -4,7 +4,7 @@
  *  Created on: Dec 12, 2016
  *      Author: Tiffany Huang
  *  Updated on: Jun 25, 2017
- *      Author: Artem Artemev
+ *      Author: Artem Artemev, @artemav
  */
 
 #include "particle_filter.h"

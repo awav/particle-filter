@@ -5,7 +5,7 @@
  *  Created on: Dec 12, 2016
  *      Author: Tiffany Huang
  *  Updated on: Jul 27, 2017
- *      Author: Artem Artemev
+ *      Author: Artem Artemev, @artemav
  */
 
 #ifndef PARTICLE_FILTER_H_

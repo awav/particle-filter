@@ -1,3 +1,12 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Dec 12, 2016
+ *      Author: Tiffany Huang
+ *  Updated on: Jun 25, 2017
+ *      Author: Artem Artemev, @artemav
+ */
+
 #include "json.hpp"
 #include "particle_filter.h"
 #include <iostream>
