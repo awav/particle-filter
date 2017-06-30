@@ -12,8 +12,10 @@
 # Go into the directory where this bash script is contained.
 cd `dirname $0`
 
+numproc=$([[ $(uname) == 'Darwin' ]] && sysctl -n hw.physicalcpu_max || nproc)
+
 # Compile code.
 mkdir -p build
 cd build
 cmake ..
-make -j `nproc` $*
+make -j ${numproc} $*

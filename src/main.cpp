@@ -48,7 +48,7 @@ int main() {
 
   // Read map data
   MapLandmarks landmarks;
-  if (!read_map_data("data/map_data.txt", &landmarks)) {
+  if (!read_map_data("../data/map_data.txt", &landmarks)) {
     cout << "Error: Could not open map file" << endl;
     return -1;
   }
