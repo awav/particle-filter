@@ -116,9 +116,7 @@ void ParticleFilter::updateWeights(
       auto ym = y + obs.x * sin + obs.y * cos;
       Landmark landmark;
       if (!map.SearchNearestLandmark(xm, ym, &landmark)) {
-        PF_DEBUG("Nearest point are not found for observation: ");
-        PF_DEBUG("pos.x =", x, "pos.y =", y, "cos =", cos, "sin =", sin);
-        PF_DEBUG("obs.x =", obs.x, "obs.y =", obs.y, "xm =", xm, "ym =", ym);
+        PF_DEBUG("Impossible happened - nearest points are not found");
         continue;
       }
       auto dx = landmark.x - xm;
