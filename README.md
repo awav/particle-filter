@@ -93,6 +93,8 @@ For fast searching nearest neighbor points I used `nanoflann` one header library
 
 ## Results
 
+Minimal time which I have gotten at Udacity track is 50 seconds on 2015's macbook laptop. This is quite impressive as naive approach O(n^3) gives very poor results (> 200 sec).
+
 ![alt text](data/particle-filter.png)
 
 > * Map data provided by 3D Mapping Solutions GmbH.
