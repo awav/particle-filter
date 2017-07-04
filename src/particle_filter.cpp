@@ -89,6 +89,7 @@ void ParticleFilter::dataAssociation(
     const std::vector<LandmarkObs> &predicted,
     std::vector<LandmarkObs> *observations) {
   // NOTHING TO DO
+  // This step is done in updatesWeights
 }
 
 void ParticleFilter::updateWeights(
@@ -116,7 +117,8 @@ void ParticleFilter::updateWeights(
       auto ym = y + obs.x * sin + obs.y * cos;
       Landmark landmark;
       if (!map.SearchNearestLandmark(xm, ym, &landmark)) {
-        PF_DEBUG("Impossible happened - nearest points are not found");
+        PF_DEBUG("Impossible happened - not found a closest point to",
+                  "(x =", landmark.x, ", y =", landmark.y);
         continue;
       }
       auto dx = landmark.x - xm;

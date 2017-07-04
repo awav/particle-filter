@@ -2,7 +2,8 @@ project(PARTICLE_FILTER)
 
 cmake_minimum_required(VERSION 3.5)
 
-add_definitions(-std=c++14)
+# -funroll-loops -ftree-vectorizer-verbose=1
+add_definitions(-std=c++14 -O3 -funroll-loops)
 
 set(CXX_FLAGS "-Wall")
 set(CMAKE_CXX_FLAGS, "${CXX_FLAGS}")
